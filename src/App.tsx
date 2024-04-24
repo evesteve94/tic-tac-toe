@@ -2,6 +2,7 @@
 import Board from './Board'
 import GameButtons from './GameButtons';
 import { useState, useEffect } from 'react'
+import logo from './assets/logo.png';
 
 function App() {
   //om spelet har börjat rederas board
@@ -28,9 +29,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <img src="./src/assets/logo.png" alt="tic tac toe logo" />
+        <img src={logo} alt="tic tac toe logo" />
         <h1>TicTacToe</h1>
-        <img src="./src/assets/logo.png" alt="tic tac toe logo" />
+        <img src={logo} alt="tic tac toe logo" />
       </header>
       <main>
         {!isGameStarted ?
