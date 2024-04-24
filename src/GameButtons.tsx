@@ -1,4 +1,3 @@
-import React from 'react';
 import x3Image from './assets/3x3.png';
 import x5Image from './assets/5x5.png';
 import x7Image from './assets/7x7.png';
@@ -7,7 +6,7 @@ interface GameButtonsProps {
   startGame: (size: number) => void;
 }
 
-const GameButtons: React.FC<GameButtonsProps> = ({ startGame }) => {
+const GameButtons= ({ startGame } : GameButtonsProps) => {
   return (
     <div className='button-div'>
       <h2>Choose Board</h2>

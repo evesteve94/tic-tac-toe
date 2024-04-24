@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Cell from './Cell';
 import MessageTitle from './MessageTitle';
 import Settings from './Settings';
@@ -7,7 +7,7 @@ interface BoardProps {
   size: number; //storleken (3x3, 5x5, 7x7)
 }
 
-const Board: React.FC<BoardProps> = ({ size }) => {
+const Board = ({ size } : BoardProps) => {
   // börjar som tomma rutor av null - blir string x || o efter klick
   const [cells, setCells] = useState<Array<string | null>>(Array(size * size).fill(null));
   //togglar mellan värde x & o

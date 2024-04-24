@@ -1,5 +1,3 @@
-import React from 'react'
-
 
 interface SettingsProps {
     winLength: number,
@@ -8,7 +6,7 @@ interface SettingsProps {
     size: number,
   }
 
-const Settings: React.FC<SettingsProps> = ({winLength, setWinLength, gameStarted, size}) => {
+const Settings = ({winLength, setWinLength, gameStarted, size} : SettingsProps) => {
   return (
     <div className='settings'>
     <button disabled={gameStarted} onClick={() => 
